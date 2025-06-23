@@ -1,0 +1,83 @@
+{
+  "autoParts": [
+    {
+      "id": "AP001",
+      "partName": "Headlight Assembly",
+      "company": "Toyota",
+      "shortDesc": "OEM headlight for Hilux - Clear lens, perfect condition",
+      "mediumDesc": "Toyota Hilux headlight assembly with intact mounting brackets and no moisture damage. Direct OEM replacement.",
+      "longDesc": "Genuine Toyota headlight assembly removed from a 2018 Hilux with only 45,000 km. Features crystal-clear polycarbonate lens with no hazing or scratches. Complete with all mounting hardware and wiring connectors. Plug-and-play installation. Perfect beam pattern with no internal condensation. Backed by our 90-day warranty.",
+      "image": "assets/img/parts/toyota_hilux_headlight.jpg"
+    },
+    {
+      "id": "AP002",
+      "partName": "Alternator",
+      "company": "Honda",
+      "shortDesc": "High-output alternator for Accord - 6-month warranty",
+      "mediumDesc": "Tested Honda Accord alternator producing 110A output. Includes voltage regulator.",
+      "longDesc": "Remanufactured alternator for 2012-2015 Honda Accord models. Produces 110 amps at 2000 RPM, meeting OEM specifications. Features new bearings, brushes, and voltage regulator. Bench-tested to ensure 14.2-14.8V output across RPM range. Includes mounting hardware and pulley. Compatible with 2.4L K24 engines. Backed by our 6-month warranty.",
+      "image": "assets/img/parts/honda_accord_alternator.jpg"
+    },
+    {
+      "id": "AP003",
+      "partName": "Brake Pads Set",
+      "company": "Ford",
+      "shortDesc": "Ranger brake pads - Semi-metallic, 70% life remaining",
+      "mediumDesc": "Complete front brake pad set for Ford Ranger with minimal wear.",
+      "longDesc": "Semi-metallic brake pad set for 2016-2020 Ford Ranger PXII models. Features 8.5mm friction material thickness (70% life remaining) with even wear pattern. Includes all shims, clips, and hardware. Low-dust formulation provides smooth stopping power without squeal. Direct fit for both 2WD and 4WD models. Meets OEM specifications for heat dissipation and friction coefficient.",
+      "image": "assets/img/parts/ford_ranger_brakepads.jpg"
+    },
+    {
+      "id": "AP004",
+      "partName": "Taillight Assembly",
+      "company": "Toyota",
+      "shortDesc": "LED taillight for Camry - No cracks or moisture",
+      "mediumDesc": "Complete LED taillight assembly with integrated reverse and signal lights.",
+      "longDesc": "OEM Toyota Camry LED taillight assembly (2015-2017 models). Features bright LED arrays for brake, running, turn signal, and reverse lights. Housing is completely sealed with no cracks, chips, or moisture intrusion. Plug-and-play connector with no wiring modifications needed. Includes all mounting hardware. Removed from low-mileage vehicle with no accident history.",
+      "image": "assets/img/parts/toyota_camry_taillight.jpg"
+    },
+    {
+      "id": "AP005",
+      "partName": "Radiator",
+      "company": "Mazda",
+      "shortDesc": "Mazda 3 radiator - Pressure tested, no leaks",
+      "mediumDesc": "Aluminum radiator with intact mounting points and connections.",
+      "longDesc": "OEM-style aluminum radiator for 2014-2018 Mazda 3 (both 1.5L and 2.0L engines). Features dual-core construction for efficient cooling. Pressure tested to 22 PSI with no leaks. All mounting tabs intact, with undamaged inlet/outlet ports. Includes transmission cooler lines for automatic models. Direct bolt-in replacement with no modifications required.",
+      "image": "assets/img/parts/mazda_3_radiator.jpg"
+    },
+    {
+      "id": "AP006",
+      "partName": "Side Mirror",
+      "company": "Nissan",
+      "shortDesc": "Power mirror for Navara - Complete with harness",
+      "mediumDesc": "Heated power-adjustable mirror with turn signal indicator.",
+      "longDesc": "Complete side mirror assembly for 2015-2020 Nissan Navara NP300. Features power adjustment, heating element, and integrated turn signal. Includes complete wiring harness and mounting bracket. Glass is undamaged with no scratches or delamination. Housing in excellent condition with no cracks. Plug-and-play installation for SL and ST-X models. Tested for full functionality.",
+      "image": "assets/img/parts/nissan_navara_mirror.jpg"
+    },
+    {
+      "id": "AP007",
+      "partName": "Starter Motor",
+      "company": "Subaru",
+      "description": "High-torque starter motor for Subaru Forester. Removed from low-mileage vehicle.",
+      "image": "assets/img/parts/subaru_forester_starter.jpg"
+    },
+    {
+      "id": "AP025",
+      "partName": "Rotor & Pad Set",
+      "company": "Ford",
+      "shortDesc": "Focus brake set - Rotors + pads, minimal wear",
+      "mediumDesc": "Complete front brake package with premium components.",
+      "longDesc": "Complete front brake package for 2012-2018 Ford Focus. Includes pair of vented rotors (22mm thickness, min spec 20mm) and semi-metallic pads (8mm thickness). Rotors show minimal runout with no grooves or hot spots. Pad friction material evenly worn with plenty of life remaining. Kit includes all necessary hardware and shims. Direct fit for both sedan and hatchback models.",
+      "image": "assets/img/parts/ford_focus_brakeset.jpg"
+    },
+    {
+  "id": "AP026",
+  "partName": "Timing Belt Kit",
+  "company": "Mazda",
+  "shortDesc": "Complete timing kit for CX-5 - Includes belt, tensioner & pulleys",
+  "mediumDesc": "OEM-equivalent timing belt kit with water pump for SkyActiv engines.",
+  "longDesc": "Complete timing belt kit for 2013-2020 Mazda CX-5 with 2.0L and 2.5L SkyActiv-G engines. Includes high-strength rubber timing belt, hydraulic tensioner, idler pulley, and water pump. All components are new old stock (NOS) with original manufacturer specifications. Belt features fiberglass reinforcement for precise timing and long life. Kit contains genuine OEM gaskets and seals. Critical replacement interval component with complete installation hardware. Backed by 12-month warranty.",
+  "image": "assets/img/parts/mazda_cx5_timingkit.jpg"
+}
+  ]
+}
