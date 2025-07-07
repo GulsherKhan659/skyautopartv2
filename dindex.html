@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Auto Parts Gallery</title>
+
+  <!-- Your existing CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Fancybox v3 CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css"
+  />
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <!-- Headlight Assembly -->
+      <div class="col">
+        <a
+          href="assets/img/original-parts/headlights.jpg"
+          data-fancybox="partsGallery"
+          data-caption="Headlight Assembly — Toyota Hilux (2015–2020)"
+        >
+          <div class="team-card ak-bg" data-src="assets/img/original-parts/headlights.jpg">
+            <div class="team-style-1">
+              <div class="team-info">
+                <div class="team-title">
+                  <a href="part-detail.html">Headlight Assembly</a>
+                  <p class="desp">Toyota Hilux (2015-2020)</p>
+                </div>
+                <div class="team-info-social">
+                  <a href="part-detail.html">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                  </a>
+                  <a href="tel:0800149419">
+                    <i class="fa-solid fa-phone px-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Alternator -->
+      <div class="col">
+        <a
+          href="assets/img/parts/honda_alternator.jpg"
+          data-fancybox="partsGallery"
+          data-caption="Alternator — Honda Accord (2010–2015)"
+        >
+          <div class="team-card ak-bg" data-src="assets/img/parts/honda_alternator.jpg">
+            <div class="team-style-1">
+              <div class="team-info">
+                <div class="team-title">
+                  <a href="part-detail.html">Alternator</a>
+                  <p class="desp">Honda Accord (2010-2015)</p>
+                </div>
+                <div class="team-info-social">
+                  <a href="part-detail.html">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                  </a>
+                  <a href="tel:0800149419">
+                    <i class="fa-solid fa-phone px-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Brake Pads -->
+      <div class="col">
+        <a
+          href="assets/img/parts/brake_pad_ford_2025.jpg"
+          data-fancybox="partsGallery"
+          data-caption="Brake Pads — Ford Ranger (2015–2020)"
+        >
+          <div class="team-card ak-bg" data-src="assets/img/parts/brake_pad_ford_2025.jpg">
+            <div class="team-style-1">
+              <div class="team-info">
+                <div class="team-title">
+                  <a href="part-detail.html">Brake Pads</a>
+                  <p class="desp">Ford Ranger (2015-2020)</p>
+                </div>
+                <div class="team-info-social">
+                  <a href="part-detail.html">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                  </a>
+                  <a href="tel:0800149419">
+                    <i class="fa-solid fa-phone px-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (required for Fancybox v3) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Fancybox v3 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <!-- Initialize Fancybox -->
+  <script>
+    $(document).ready(function() {
+      $('[data-fancybox="partsGallery"]').fancybox({
+        buttons: [
+          "slideShow",
+          "fullScreen",
+          "thumbs",
+          "close"
+        ],
+        protect: true,
+        loop: false
+      });
+    });
+  </script>
+</body>
+</html>

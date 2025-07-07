@@ -8,7 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Thememarch" />
     <!-- Favicon Icon -->
-    <link rel="icon" href="assets/img/favicon.svg" />
+    <!-- Favicon and Apple Touch Icons -->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+<link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico">
+<link rel="manifest" href="assets/img/favicon/site.webmanifest">
+
+<!-- Android Chrome Icons -->
+<link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/img/favicon/android-chrome-512x512.png">
+
     <!-- Site Title -->
       <title>Sky Auto Parts</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,6 +28,81 @@
     <link rel="stylesheet" href="assets/css/plugins/aos.css" />
         <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+<style>
+      #lg-download{
+        display: none !important;
+    }
+      h3 {
+      text-align: center;
+      display: none !important;
+      margin-bottom: 30px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+    }
+    .item {
+      position: relative;
+      width: calc(25% - 16px);
+      height: var(--card-height);
+      background: #fff;
+      border: 1px solid #ddd;
+      overflow: hidden;
+      border-radius: 4px;
+    }
+    .thumb-content {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .thumb-content img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 8px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .gallery-hover-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .gallery-hover-icon img {
+      width: 40px !important;
+      height: 40px !important;
+    }
+    .item:hover .caption,
+    .item:hover .gallery-hover-icon {
+      opacity: 1;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 1024px) {
+      .item { width: calc(33.333% - 16px); }
+    }
+    @media (max-width: 768px) {
+      .item { width: calc(50% - 16px); }
+    }
+    @media (max-width: 480px) {
+      .item { width: 100%; }
+    }
+</style>
+    <!--  -->
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -127,70 +212,289 @@ s0.parentNode.insertBefore(s1,s0);
     <!-- Start Gallery -->
     <div class="ak-height-75 ak-height-lg-80"></div>
     <section class="container">
-        <div class="gallery" id="static-thumbnails">
-            <div class="item">
-                <a href="assets/img/gallery/1.jpg">
-                    <img src="assets/img/gallery/1.jpg" alt="Phto" />
-                    <div class="frame gallery-hover-icon">
-                        <span><img src="assets/img/zoom.svg" alt="zoom"></span>
-                    </div>
-                </a>
-            </div>
-
-            <div class="item vertical">
-                <a href="assets/img/gallery/2.jpg">
-                    <img src="assets/img/gallery/2.jpg" alt="Phto" />
-                    <div class="frame gallery-hover-icon">
-                        <span><img src="assets/img/zoom.svg" alt="zoom"></span>
-                    </div>
-                </a>
-            </div>
-
-            <div class="item horizontal">
-                <a href="assets/img/gallery/3.jpg">
-                    <img src="assets/img/gallery/3.jpg" alt="Phto" />
-                    <div class="frame gallery-hover-icon">
-                        <span><img src="assets/img/zoom.svg" alt="zoom"></span>
-                    </div>
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="assets/img/gallery/4.jpg">
-                    <img src="assets/img/gallery/4.jpg" alt="Phto" />
-                    <div class="frame gallery-hover-icon">
-                        <span><img src="assets/img/zoom.svg" alt="zoom"></span>
-                    </div>
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="assets/img/gallery/5.jpg">
-                    <img src="assets/img/gallery/5.jpg" alt="Phto" />
-                    <div class="frame gallery-hover-icon">
-                        <span><img src="assets/img/zoom.svg" alt="zoom"></span>
-                    </div>
-                </a>
-            </div>
-
-            <div class="item horizontal">
-                <a href="assets/img/gallery/6.jpg">
-                    <img src="assets/img/gallery/6.jpg" alt="Phto" />
-                    <div class="frame gallery-hover-icon">
-                        <span><img src="assets/img/zoom.svg" alt="zoom"></span>
-                    </div>
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="assets/img/gallery/7.jpg">
-                    <img src="assets/img/gallery/7.jpg" alt="Phto" />
-                    <div class="frame gallery-hover-icon">
-                        <span><img src="assets/img/zoom.svg" alt="zoom"></span>
-                    </div>
-                </a>
-            </div>
+ <div class="gallery" id="static-thumbnails">
+    <!-- 1. Back Glass -->
+    <div class="item">
+      <a href="assets/img/original-parts/back-glass.jpg" class="popup-link">
+        <div class="thumb-content">
+          <img src="assets/img/original-parts/back-glass.jpg" alt="Back Glass">
+          <div class="caption">
+            <h3>Back Glass</h3>
+            <p>OEM rear window glass for multiple models.</p>
+          </div>
+          <div class="gallery-hover-icon">
+            <img src="assets/img/zoom.svg" alt="zoom">
+          </div>
         </div>
+      </a>
+    </div>
+
+    <!-- 2. Backlight -->
+    <div class="item">
+      <a href="assets/img/original-parts/backlight.jpg" class="popup-link">
+        <div class="thumb-content">
+          <img src="assets/img/original-parts/backlight.jpg" alt="Backlight">
+          <div class="caption">
+            <h3>Backlight</h3>
+            <p>High-quality brake light assembly.</p>
+          </div>
+          <div class="gallery-hover-icon">
+            <img src="assets/img/zoom.svg" alt="zoom">
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- 3. Backlight 2 -->
+    <div class="item">
+      <a href="assets/img/original-parts/backlight2.jpg" class="popup-link">
+        <div class="thumb-content">
+          <img src="assets/img/original-parts/backlight2.jpg" alt="Backlight 2">
+          <div class="caption">
+            <h3>Backlight 2</h3>
+            <p>LED tail light variant.</p>
+          </div>
+          <div class="gallery-hover-icon">
+            <img src="assets/img/zoom.svg" alt="zoom">
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- 4. Cooling System -->
+    <div class="item">
+      <a href="assets/img/original-parts/cooling-system.jpg" class="popup-link">
+        <div class="thumb-content">
+          <img src="assets/img/original-parts/cooling-system.jpg" alt="Cooling System">
+          <div class="caption">
+            <h3>Cooling System</h3>
+            <p>Radiator and cooling components.</p>
+          </div>
+          <div class="gallery-hover-icon">
+            <img src="assets/img/zoom.svg" alt="zoom">
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- 5. Doors -->
+    <div class="item">
+      <a href="assets/img/original-parts/doors.jpg" class="popup-link">
+        <div class="thumb-content">
+          <img src="assets/img/original-parts/doors.jpg" alt="Doors">
+          <div class="caption">
+            <h3>Doors</h3>
+            <p>Front door panels (left & right).</p>
+          </div>
+          <div class="gallery-hover-icon">
+            <img src="assets/img/zoom.svg" alt="zoom">
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- 6. Doors 2 -->
+    <div class="item">
+      <a href="assets/img/original-parts/doors2.jpg" class="popup-link">
+        <div class="thumb-content">
+          <img src="assets/img/original-parts/doors2.jpg" alt="Doors 2">
+          <div class="caption">
+            <h3>Doors 2</h3>
+            <p>Rear door panels (left & right).</p>
+          </div>
+          <div class="gallery-hover-icon">
+            <img src="assets/img/zoom.svg" alt="zoom">
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- 7. Doors 3 -->
+    <div class="item">
+      <a href="assets/img/original-parts/doors3.jpg" class="popup-link">
+        <div class="thumb-content">
+          <img src="assets/img/original-parts/doors3.jpg" alt="Doors 3">
+          <div class="caption">
+            <h3>Doors 3</h3>
+            <p>Door shell assemblies.</p>
+          </div>
+          <div class="gallery-hover-icon">
+            <img src="assets/img/zoom.svg" alt="zoom">
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- 8. Doors 4 -->
+    <div class="item">
+      <a href="assets/img/original-parts/doors4.jpg" class="popup-link">
+        <div class="thumb-content">
+          <img src="assets/img/original-parts/doors4.jpg" alt="Doors 4">
+          <div class="caption">
+            <h3>Doors 4</h3>
+            <p>Complete door set with handles.</p>
+          </div>
+          <div class="gallery-hover-icon">
+            <img src="assets/img/zoom.svg" alt="zoom">
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- 9. Engine -->
+    <div class="item">
+      <a href="assets/img/original-parts/engine.jpg" class="popup-link">
+        <div class="thumb-content">
+          <img src="assets/img/original-parts/engine.jpg" alt="Engine">
+          <div class="caption">
+            <h3>Engine</h3>
+            <p>Used engine block units.</p>
+          </div>
+          <div class="gallery-hover-icon">
+            <img src="assets/img/zoom.svg" alt="zoom">
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- 10. Headlights -->
+    <div class="item">
+      <a href="assets/img/original-parts/headlights.jpg" class="popup-link">
+        <div class="thumb-content">
+          <img src="assets/img/original-parts/headlights.jpg" alt="Headlights">
+          <div class="caption">
+            <h3>Headlights</h3>
+            <p>Halogen headlight assemblies.</p>
+          </div>
+          <div class="gallery-hover-icon">
+            <img src="assets/img/zoom.svg" alt="zoom">
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- 11. Side Mirror -->
+    <div class="item">
+      <a href="assets/img/original-parts/side-mirror.jpg" class="popup-link">
+        <div class="thumb-content">
+          <img src="assets/img/original-parts/side-mirror.jpg" alt="Side Mirror">
+          <div class="caption">
+            <h3>Side Mirror</h3>
+            <p>Driver-side mirror with housing.</p>
+          </div>
+          <div class="gallery-hover-icon">
+            <img src="assets/img/zoom.svg" alt="zoom">
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- 12. Side Mirrors 2 -->
+    <div class="item">
+      <a href="assets/img/original-parts/side-mirros-2.jpg" class="popup-link">
+        <div class="thumb-content">
+          <img src="assets/img/original-parts/side-mirros-2.jpg" alt="Side Mirror 2">
+          <div class="caption">
+            <h3>Side Mirror 2</h3>
+            <p>Passenger-side mirror glass.</p>
+          </div>
+          <div class="gallery-hover-icon">
+            <img src="assets/img/zoom.svg" alt="zoom">
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- 13. Side Mirrors 3 -->
+    <div class="item">
+      <a href="assets/img/original-parts/side-mirros-3.jpg" class="popup-link">
+        <div class="thumb-content">
+          <img src="assets/img/original-parts/side-mirros-3.jpg" alt="Side Mirror 3">
+          <div class="caption">
+            <h3>Side Mirror 3</h3>
+            <p>Foldable side mirror units.</p>
+          </div>
+          <div class="gallery-hover-icon">
+            <img src="assets/img/zoom.svg" alt="zoom">
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- 14. Suspension -->
+    <div class="item">
+      <a href="assets/img/original-parts/suspension.jpg" class="popup-link">
+        <div class="thumb-content">
+          <img src="assets/img/original-parts/suspension.jpg" alt="Suspension">
+          <div class="caption">
+            <h3>Suspension</h3>
+            <p>Shock absorbers and struts.</p>
+          </div>
+          <div class="gallery-hover-icon">
+            <img src="assets/img/zoom.svg" alt="zoom">
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- 15. Tyres -->
+    <div class="item">
+      <a href="assets/img/original-parts/tyres.jpg" class="popup-link">
+        <div class="thumb-content">
+          <img src="assets/img/original-parts/tyres.jpg" alt="Tyres">
+          <div class="caption">
+            <h3>Tyres</h3>
+            <p>All-season tire set.</p>
+          </div>
+          <div class="gallery-hover-icon">
+            <img src="assets/img/zoom.svg" alt="zoom">
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- 16. Tyres 2 -->
+    <div class="item">
+      <a href="assets/img/original-parts/tyres2.jpg" class="popup-link">
+        <div class="thumb-content">
+          <img src="assets/img/original-parts/tyres2.jpg" alt="Tyres 2">
+          <div class="caption">
+            <h3>Tyres 2</h3>
+            <p>High-performance tires.</p>
+          </div>
+          <div class="gallery-hover-icon">
+            <img src="assets/img/zoom.svg" alt="zoom">
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894yePhh+P0v68rVnXew5bVDi5FnY0N+Ppohp5qepJjzR6EtG0LNNcpL8tBtM2K4m9qPRJJ4n9O+8mQG5vHZQw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+
+  <!-- Magnific Popup JS -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+    integrity="sha512-Is0m1VZFT+Un9nKbQRjFt3UnMw2fXqLT6U+o5n7mH2wxMZje8LGOtgnvDzJKgTCYgesUQe4P9k4YRn9lj64wOA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+
+  <script>
+    $(document).ready(function() {
+      $('.popup-link').magnificPopup({
+        type: 'image',
+        gallery: { enabled: true },
+        zoom: { enabled: true, duration: 300 }
+      });
+    });
+  </script>
+        <!--  -->
+        <!--  -->
     </section>
     <!-- Snd Gallery -->
 
