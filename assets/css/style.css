@@ -2944,6 +2944,18 @@ kbd {
 /*--------------------------------------------------------------
   11. Common Page Title
 ----------------------------------------------------------------*/
+@keyframes blinkColor {
+    0%, 100% {
+        color: #ffffff;
+    }
+    50% {
+        color: #31bcf0;
+    }
+}
+
+.page-title-important {
+    animation: blinkColor 1s infinite;
+}
 .common-page-title {
   margin-bottom: 30px;
 }
