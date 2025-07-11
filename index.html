@@ -45,11 +45,59 @@
     </script>
     
 <style>
-    #lg-download{
-        display: none !important;
-    }
+
+
+
+/* Ensure all hero text is above overlay */
+.hero-title, .hero-main-title, .hero-main-title-1, .mini-title, .common-btn {
+    position: relative;
+    z-index: 2;
+}
+
+/* Main Headline Styling */
+.hero-main-title, .hero-main-title-1 {
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+    font-size: 3.2rem; /* or match your design */
+    line-height: 1.1;
+    text-shadow:
+      0 6px 32px rgba(0,0,0,0.42),
+      0 2px 6px rgba(30,60,80,0.15);
+    margin-bottom: 0.5em;
+}
+
+/* Subtitle Styling */
+.mini-title {
+    color: #e3f2fd; /* pale blue, easier on eyes than yellow */
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 400;
+    text-shadow: 0 3px 12px rgba(0,0,0,0.55);
+    margin-bottom: 1.5em;
+}
+
+/* Optional: Make your button stand out */
+.common-btn {
+    background: linear-gradient(90deg, #29b6f6 0%, #1976d2 100%);
+    color: #fff;
+    font-weight: 700;
+    /* position: absolute !important; */
+    bottom: 45px;
+    /* border-radius: 30px; */
+    z-index: 2000 !important;
+    padding: 0.9em 2.2em;
+    font-size: 1.13rem;
+}
+.common-btn:hover {
+    background: linear-gradient(90deg, #1976d2 0%, #29b6f6 100%);
+    /* box-shadow: 0 6px 28px rgba(41,182,246,0.22); */
+}
+
+
 </style>
 </head>
+
 
 <body>
     <!-- Preloader -->
@@ -71,6 +119,103 @@
             </div>
         </div>
     </div>
+    
+<!-- Important Message Popup -->
+<div class="modal fade" id="importantMessageModal" tabindex="-1" aria-labelledby="importantMessageLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content" style="background-color: #181818; color: #fff; border-radius: 12px; border: none; box-shadow: 0 2px 18px #000a;">
+      <div class="modal-header" style="border-bottom: 1px solid #333;">
+        <h4 class="modal-title" id="importantMessageLabel" style="color: #29b6f6; font-weight: bold;">Warranty Policy – Important Notice</h4>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close" style="filter: invert(1);"></button>
+      </div>
+      <div class="modal-body" style="max-height: 65vh; overflow-y: auto; font-size: 1rem;">
+        <!-- <h5 style="color:#29b6f6; font-weight:bold;">SKY AUTO PARTS – WARRANTY POLICY FOR GENUINE USED AUTO PARTS</h5> -->
+        <div style="font-size:0.98em;">
+          <strong style="color:#29b6f6">Compliant with New Zealand Consumer Laws (CGA & Fair-Trading Act)</strong>
+          <ol style="margin-left:0; padding-left:1em;">
+            <li><strong>WARRANTY COVERAGE</strong>
+              <ul>
+                <li>
+                  <strong>A. Standard Parts Warranty (Non-Engine/Transmission/Turbo):</strong>
+                  <ul>
+                    <li>30 Days Parts Only – Covers defects in materials or workmanship (labour not included).</li>
+                    <li><u>Exclusions:</u> Damage caused by other components, improper installation, misuse, accidents, modifications, aftermarket ECU use, lack of maintenance. Freight costs are not covered.</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>B. Engine & Transmission Warranty (Case-by-Case Only):</strong>
+                  <ul>
+                    <li><u>Silver Engine Warranty</u> (If Specified at Purchase): 3 Months Parts Only, Unlimited Kilometers (from invoice date).</li>
+                    <li>Long Block Only – Includes engine block, cylinder head(s).</li>
+                    <li><u>Accessories NOT Covered:</u> Manifolds, pumps, pulleys, turbos, injectors, sensors, alternators, wiring, hoses, EGR, coolers, etc. (included only for testing/convenience and sold "as-is").</li>
+                    <li>All engines supplied are guaranteed to be in serviceable condition.</li>
+                    <li>Heat Tabs Installed – Warranty void if melted, removed, or tampered with.</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>C. Turbochargers:</strong> No standard warranty – sold "as-is" unless stated in writing.
+                </li>
+              </ul>
+            </li>
+            <li><strong>WARRANTY EXCLUSIONS</strong>
+              <ul>
+                <li>Engines, transmissions, or turbos (unless separate written agreement).</li>
+                <li>Damage from external factors (accidents, fluids, overheating).</li>
+                <li>Aftermarket modifications (ECU tuning, non-standard parts).</li>
+                <li>Use of aftermarket ECU voids warranty.</li>
+                <li>Wear/tear, corrosion, or improper storage.</li>
+                <li>Labour, freight, or removal/reinstallation costs.</li>
+              </ul>
+            </li>
+            <li><strong>CLAIM PROCESS</strong>
+              <ul>
+                <li>Notify Sky Auto Parts immediately – defects must be reported within 48 hours of discovery.</li>
+                <li>Proof required – original invoice and evidence of proper installation/maintenance.</li>
+                <li>At our discretion – may repair, replace, or refund (parts only).</li>
+                <li>Defective parts must be returned for verification.</li>
+              </ul>
+            </li>
+            <li><strong>STATUTORY RIGHTS (CGA)</strong>
+              <ul>
+                <li>This warranty does not limit Buyer’s rights under the Consumer Guarantees Act 1993. If a part is not of "acceptable quality" or "fit for purpose", the Buyer may seek remedies under NZ law.</li>
+              </ul>
+            </li>
+            <li><strong>DISPUTES & GOVERNING LAW</strong>
+              <ul>
+                <li>Unresolved disputes may be referred to the NZ Disputes Tribunal or Commerce Commission.</li>
+                <li>This warranty is governed by New Zealand law.</li>
+              </ul>
+            </li>
+          </ol>
+          <p style="margin-top:10px;"><strong>Buyer Acknowledgment:</strong><br>
+            By purchasing from Sky Auto Parts, the Buyer agrees to these terms. Engines, transmissions, and turbos are not covered unless a separate written warranty is provided.
+          </p>
+          <div style="margin-top:12px; border-top:1px solid #444; padding-top:8px;">
+            <strong>Sky Auto Parts Contact:</strong><br>
+            📍 7A Sheffield Street, Levin 5510<br>
+            📧 <a href="mailto:sales@skyautoparts.co.nz" style="color:#29b6f6;">sales@skyautoparts.co.nz</a><br>
+            📞 <a href="tel:0800149419" style="color:#29b6f6;">0800 149 419</a><br>
+            📞 <a href="tel:062103993" style="color:#29b6f6;">06 2103993</a>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer" style="border-top: 1px solid #333;">
+        <button type="button" class="btn btn-primary" style="background:#29b6f6; border:none;" data-bs-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Script to Show Modal on Page Load (Bootstrap 5 required) -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var myModal = new bootstrap.Modal(document.getElementById('importantMessageModal'));
+  myModal.show();
+});
+
+</script>
 
     <!-- Start Header Section -->
     <header class="ak-site_header ak-style1 ak-sticky_header">
@@ -112,12 +257,12 @@
 
                     </div>
                     <div class="ak-main-header-right">
-                        <a href="tel:0800149419">
+                        <a href="tel:062103993">
                             <div class="d-flex align-items-center gap-3">
                                 <div class="heartbeat-icon">
                                     <span class="ak-heartbeat-btn"><img src="assets/img/phone.svg" alt="..."></span>
                                 </div>
-                                <h6>0800 149 419</h6>
+                                <h6>06 210 3993</h6>
                             </div>
                         </a>
                     </div>
@@ -137,18 +282,17 @@
                 <div class="ak-hero ak-style1 slide-inner">
                     <img src="assets/img/hero_slider_bg_1.png" class="ak-hero-bg ak-bg object-cover"
                         alt="Auto parts background">
+                        
                     <div class="container">
                         <div class="hero-slider-info">
                             <div class="slider-info">
                                 <div class="hero-title">
-                                    <h1 class="hero-main-title" data-swiper-parallax="300">Quality Used Auto Parts</h1>
-                                    <p class="mini-title" data-swiper-parallax="400">Your trusted source for affordable,
-                                        reliable auto parts in Palmerston North. Save 50-70% vs new parts with our
-                                        quality used components.</p>
+                                    <h1 class="hero-main-title" data-swiper-parallax="300">Quality Used <br>Auto Parts</h1>
+                                    <p class="mini-title" data-swiper-parallax="400">Your trusted source for affordable, reliable auto parts in Levin North. Enjoy significant savings with our high-quality used components compared to buying new.</p>
                                 </div>
                                 <div class="ak-height-45 ak-height-lg-30"></div>
                                 <div data-swiper-parallax="300">
-                                    <a href="parts.html#static-thumbnails" class="common-btn">
+                                    <a href="parts.html#static-thumbnails"  class="common-btn">
                                         BROWSE PARTS
                                     </a>
                                 </div>
@@ -162,9 +306,11 @@
             <!-- Slide 3: Rare Parts Focus -->
             <div class="swiper-slide">
                 <div class="ak-hero ak-style1  slide-inner">
-                    <img src="assets/img/hero_slider_bg_1.png" class="ak-hero-bg ak-bg object-cover"
+                    <img src="assets/img/hero_slider_bg_2.png" class="ak-hero-bg ak-bg object-cover"
                         alt="Hard-to-find parts">
-                    <div class="container">
+                       
+                   
+                        <div class="container">
                         <div class="hero-slider-info">
                             <div class="slider-info">
                                 <div class="hero-title">
@@ -172,7 +318,7 @@
                                     <h1 class="hero-main-title-1 style-2" data-swiper-parallax="100">For Older Vehicles
                                     </h1>
                                     <p class="mini-title" data-swiper-parallax="400">Specializing in rare components for
-                                        vintage and classic cars. We source parts you can't find elsewhere in Manawatu.
+                                        vintage and classic cars. We source parts you can't find elsewhere in Levin.
                                     </p>
                                 </div>
                                 <div class="ak-height-45 ak-height-lg-30"></div>
@@ -190,9 +336,11 @@
             <!-- Slide 4: Quality Focus -->
             <div class="swiper-slide">
                 <div class="ak-hero ak-style1 slide-inner">
-                    <img src="assets/img/hero_slider_bg_2.png" class="ak-hero-bg ak-bg object-cover"
+                    <img src="assets/img/hero_slider_bg_3.PNG" class="ak-hero-bg ak-bg object-cover"
                         alt="Quality parts">
-                    <div class="container">
+                        
+                   
+                        <div class="container">
                         <div class="hero-slider-info">
                             <div class="slider-info">
                                 <div class="hero-title">
@@ -205,7 +353,7 @@
                                 </div>
                                 <div class="ak-height-45 ak-height-lg-30"></div>
                                 <div data-swiper-parallax="300">
-                                    <a href="parts.html" class="common-btn">
+                                    <a href="parts.html" style="z-index: 999 !important;" class="common-btn">
                                         SHOP NOW
                                     </a>
                                 </div>
@@ -298,15 +446,17 @@
                         <div class="background-text">Benefits</div>
                         <h2 class="ak-section-title">Why Choose SKY Auto Parts</h2>
                         <p class="ak-section-subtitle">We're your trusted source for quality used auto parts in
-                            Manawatu. With thousands of components in stock and a specialized yard for DIY part removal,
+                            Levin. With thousands of components in stock and a specialized yard for DIY part removal,
                             we make finding affordable parts simple and reliable.</p>
                     </div>
                     <div class="ak-height-60 ak-height-lg-30"></div>
                     <div class="stroke-heading-text">
-                        <h3 class="ak-stroke-text hover-color-changes">Massive Parts Inventory</h3>
-                        <h3 class="ak-stroke-text hover-color-changes">50-70% Savings vs New</h3>
-                        <h3 class="ak-stroke-text hover-color-changes">Rigorous Quality Testing</h3>
-                        <h3 class="ak-stroke-text hover-color-changes">DIY Salvage Option</h3>
+                        <h3 class="ak-stroke-text hover-color-changes">EU & JP Car Parts</h3>
+<h3 class="ak-stroke-text hover-color-changes">Affordable Prices</h3>
+<h3 class="ak-stroke-text hover-color-changes">Budget Friendly </h3>
+<h3 class="ak-stroke-text hover-color-changes">Tested & Warranty Backed</h3>
+<h3 class="ak-stroke-text hover-color-changes">Fast Nationwide Shipping</h3>
+
                     </div>
                     <div class="ak-height-60 ak-height-lg-30"></div>
                     <a href="about.html" class="common-btn">
@@ -631,7 +781,7 @@
                         <h2 class="ak-section-title">Our Auto Parts<br> Solutions</h2>
                         <p class="ak-section-subtitle">SKY Auto Parts provides comprehensive solutions for all your
                             automotive part needs. From everyday components to rare finds, we're your trusted partner in
-                            Manawatu.</p>
+                            Levin.</p>
                     </div>
                     <div class="ak-height-50 ak-height-lg-10"></div>
                     <a href="#" class="more-btn">VIEW NEW STOCK</a>
@@ -652,7 +802,7 @@
                 <div class="ak-funfact ak-style1" data-aos="fade-up">
                     <div class="ak-funfact-number">
                         <div>
-                            <span id="count1" class="ak-stroke-number counter" data-number="1000"></span>
+                            <span id="count1" class="ak-stroke-number counter" data-number="10000"></span>
                         </div>
                         <div><span class="ak-stroke-number">+</span></div>
                     </div>
@@ -710,101 +860,7 @@
     <div class="ak-height-125 ak-height-lg-80"></div>
 <!--  -->
     <!--  -->
-<div class="container">
-    <div class="common-page-title text-center">
-        <h3 class="page-title page-title-important">IMPORTANT NOTICE</h3>
-        <!-- <div class="primary-color-border"></div> -->
-    </div>
 
-    <div class="ak-height-50"></div>
-
-    <div class="policy-content">
-
-        <h4 class="ak-section-title mb-5">1. WARRANTY COVERAGE</h4>
-
-        <p><strong>A. Standard Parts Warranty (Non-Engine/Transmission/Turbo)</strong><br>
-        <u>30 Days Parts Only</u> – Covers defects in materials or workmanship (labour not included).</p>
-        <ul>
-            <li>Excludes damage caused by other components, improper installation, or misuse.</li>
-            <li>No coverage for damage from accidents, modifications, aftermarket ECU use, or poor maintenance.</li>
-            <li>Freight costs are not included under warranty claims.</li>
-        </ul>
-
-        <p><strong>B. Engine & Transmission Warranty (Case-by-Case Basis)</strong><br>
-        <u>Silver Engine Warranty (If Specified at Purchase)</u> – 3 Months Parts Only, Unlimited Kilometers.</p>
-        <ul>
-            <li>Long Block Only – Includes engine block and cylinder head(s).</li>
-            <li>Accessories NOT covered (manifolds, sensors, pumps, injectors, wiring, etc.).</li>
-            <li>These parts are included only for testing and sold "as-is".</li>
-            <li>Heat Tabs Installed – Warranty void if tampered or melted.</li>
-        </ul>
-
-        <p><strong>C. Turbochargers</strong><br>
-        No standard warranty – sold "as-is" unless otherwise stated in writing.</p>
-
-        <div class="ak-height-30"></div>
-
-        <h4 class="ak-section-title mb-5">2. WARRANTY EXCLUSIONS</h4>
-        <p>This warranty does NOT cover:</p>
-        <ul>
-            <li>Engines, transmissions, or turbos (unless a written warranty is provided).</li>
-            <li>Damage due to incorrect fluids, overheating, or external factors.</li>
-            <li>Aftermarket ECU use, modifications, or non-standard parts.</li>
-            <li>Normal wear and tear, corrosion, or storage damage.</li>
-            <li>Labour, freight, or reinstall/removal costs.</li>
-        </ul>
-
-        <div class="ak-height-30"></div>
-
-        <h4 class="ak-section-title mb-5">3. CLAIM PROCESS</h4>
-        <ul>
-            <li><strong>Immediate Notification:</strong> Report defects within 48 hours of discovery.</li>
-            <li><strong>Proof Required:</strong> Original invoice and evidence of proper installation/maintenance.</li>
-            <li><strong>Resolution:</strong> We may repair, replace, or refund (parts only).</li>
-            <li><strong>Inspection:</strong> All defective parts must be returned for verification.</li>
-        </ul>
-
-        <div class="ak-height-30"></div>
-
-        <h4 class="ak-section-title mb-5">4. STATUTORY RIGHTS (CGA)</h4>
-        <p>This policy does not limit your rights under the NZ Consumer Guarantees Act 1993. If a part is not of “acceptable quality” or “fit for purpose,” you may seek legal remedies under New Zealand law.</p>
-
-        <div class="ak-height-30"></div>
-
-        <h4 class="ak-section-title mb-5">5. DISPUTES & GOVERNING LAW</h4>
-        <p>Unresolved issues may be referred to the NZ Disputes Tribunal or Commerce Commission. All disputes are governed by New Zealand law.</p>
-
-        <div class="ak-height-30"></div>
-
-        <p><strong>Buyer Acknowledgment:</strong><br>
-        By purchasing from Sky Auto Parts, the buyer agrees to these terms. Engines, transmissions, and turbos are not covered unless a separate written warranty is provided.</p>
-
-        <div class="ak-height-30"></div>
-
-        <h4 class="ak-section-title mb-5">Contact Information</h4>
-       
-        <div class="d-flex w-100 justify-content-spacebetween">
- 
-            <a href="tel:0800149419" class="common-btn mx-2">
-    <img src="assets/img/phone.svg" alt="Call SKY Autoparts">
-                
-    0800 149 419
-</a>
-<a href="mailto:sales@skyautoparts.co.nz" class="common-btn mx-2">
-    sales@skyautoparts.co.nz
-</a>
-
-<a href="tel:062103993" class="common-btn mx-2">
-    <img src="assets/img/phone.svg" alt="Call SKY Autoparts">
-                
-    06 2103993
-</a>
-
-        </div>
-       
-
-    </div>
-</div>
 
 <!--  -->
     <!--  -->
@@ -906,7 +962,7 @@
                         </span>
                         7A Sheffield Street, Levin, New Zealand
                     </a>
-                    <a href="mailto:info@skyautopart.co.n" class="email">
+                    <a href="mailto:info@skyautopart.co.nz" class="email">
                         <span class="me-1">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18"
                                 fill="none">
@@ -932,7 +988,7 @@
                                 </defs>
                             </svg>
                         </span>
-                        info@skyautopart.co.n
+                        info@skyautopart.co.nz
                     </a>
                     <p class="date">
                         <span class="me-1">
@@ -967,7 +1023,8 @@
                                 </defs>
                             </svg>
                         </span>
-                        Sun - Thu: Open 27/7
+                         Mon–Fri 9:00–5:00<br><span class="ps-4"> Saturday 9:00–2:00</span>
+
                     </p>
                 </div>
                 <div class="footer-address" data-aos="fade-up" data-aos-delay="150" data-aos-duration="500">
@@ -1078,6 +1135,8 @@
   </script>
     <!-- End Video Popup -->
     <!-- Script -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="assets/js/plugins/jquery-3.7.1.min.js"></script>
     <script src="assets/js/plugins/lightgallery.min.js"></script>
     <script src="assets/js/plugins/simplePagination.min.js"></script>

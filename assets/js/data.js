@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             id: "AP002",
             partName: "Alternator",
-            company: "Honda Accord (2010-2015)",
+            company: "Honda Accord (2023-2015)",
             shortDesc: "High-output alternator - 6-month warranty",
             longDesc: "Remanufactured alternator for 2012-2015 Honda Accord models. Produces 110 amps at 2000 RPM, meeting OEM specifications. Features new bearings, brushes, and voltage regulator. Bench-tested to ensure 14.2-14.8V output across RPM range. Includes mounting hardware and pulley.",
             image: "assets/img/parts/honda_accord_alternator.jpg",
